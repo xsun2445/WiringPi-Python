@@ -33,6 +33,8 @@ extern unsigned int  digitalReadByte     (void) ;
 extern unsigned int  digitalReadByte2    (void) ;
 extern          void digitalWriteByte    (int value) ;
 extern          void digitalWriteByte2   (int value) ;
+extern          void sendPulseToRadar    (int pins, int num_loop, unsigned int pd) ;
+extern          void sendPulseToRadar2    (int pins, int num_loop, unsigned int pd, unsigned int w) ;
 extern int  waitForInterrupt    (int pin, int mS) ;
 extern int  piThreadCreate      (void *(*fn)(void *)) ;
 extern void piLock              (int key) ;
